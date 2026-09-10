@@ -10,7 +10,7 @@ class NoParams(BaseModel):
 class ConnectParams(BaseModel):
     label: str = Field(default="", description="Friendly connection label, e.g. Primary Diligent ESG.")
     api_key: str = Field(description="ESG API Key / Client Token")
-    base_url: str = Field(default="https://api.diligent.com/esg/v1", description="Diligent ESG API base URL.")
+    base_url: str = Field(default="https://apis.highbond.com/v1", description="Diligent HighBond API base URL (https://apis.highbond.com/v1).")
 
 class ConnectionIdParams(BaseModel):
     connection_id: str = Field(default="", description="Connection identifier (empty uses active connection).")
